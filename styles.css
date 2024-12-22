@@ -1,0 +1,140 @@
+/* Landing Page */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#div1{
+    width: 50%;
+    height: 100vh;
+    border: 1px solid gray;
+    background-color: #000;
+}
+#div2{
+    width: 50%;
+    height: 100vh;
+    border: 1px solid rgb(44, 43, 43);
+    background-color: #575A85;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  
+}
+
+.landing-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #575A85;
+}
+
+.landing-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.landing-container img{
+    margin: 60px;
+}
+.landing-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.landing-container button:hover {
+    background: #3a434c;
+}
+
+/* Main Page */
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    color: #ccc;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details, .more-info, .post-offices {
+    margin-bottom: 20px;
+}
+
+.detail-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.info-row {
+    display: flex;
+    flex-direction: column;
+}
+.detail-item, .info-item {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    color: #3a434c;
+}
+
+#map {
+    border: 2px solid gray;
+    height: 400px;
+    align-items: center;
+    margin-bottom: 100pxpx;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px #a8abec;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.search-box {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#post-office-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.post-office-card {
+    flex: 2;
+    flex-wrap: wrap;
+    min-width: 200px;
+    padding: 10px;
+    background-color: #575A85;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post-office-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.post-office-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}

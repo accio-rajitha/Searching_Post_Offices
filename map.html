@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="details">
+            <div class="detail-row">
+                <div class="detail-item">IP Address: <span id="ip"></span></div>
+                <div class="detail-item">City: <span id="city"></span></div>
+                <div class="detail-item">Region: <span id="region"></span></div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-item">Latitude: <span id="latitude"></span></div>
+                <div class="detail-item">Longitude: <span id="longitude"></span></div>
+                <div class="detail-item">Organization: <span id="organization"></span></div>
+            </div>
+        </div>
+
+       
+        <div id="map">Your Current Location</div>
+
+       
+        <div class="more-info">
+            <h2>More Information About You</h2>
+            <div class="info-row">
+                <div class="info-item">Timezone: <span id="timezone"></span></div>
+                <div class="info-item">Date: <span id="date"></span></div>
+                <div class="info-item">Pincode: <span id="pincode"></span></div>
+                <div class="info-item">Message: <span id="message"></span></div>
+            </div>
+        </div>
+
+       
+        <div class="post-offices">
+            <h2>Post Offices Near You</h2>
+            <input type="text" id="search" class="search-box" placeholder="Search By Name">
+            <div id="post-office-cards"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
